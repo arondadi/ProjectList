@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mortgage Calulator</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="m-5">Mortgage Calculator</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="width">Mortage Loan: </label>
+                        <input type="text" class="form-control" id="mortgage">
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Yearly Interest Rate: </label>
+                        <input type="text" class="form-control" id="interest">
+                    </div>
+                    <div class="form-group">
+                        <label for="interval">Compounding Interval: </label>
+                        <select class="form-control" id="intervalType">
+                            <option>Daily</option>
+                            <option>Weekly</option>
+                            <option>Monthly</option>
+                            <!--<option>Continually</option>-->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="intervalNumber">How Many Years: </label>
+                        <input type="text" class="form-control" id="intervalNumber">
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block" onclick="myFunction()">Calculate the cost</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-5">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Payment at each interval: </h5>
+                <h6 class="card-subtitle mb-2 text-muted" id="output">Insert the numbers and calculate</h6>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="mortgagecalculator.js"></script>
+
+</body>
+
+</html>
